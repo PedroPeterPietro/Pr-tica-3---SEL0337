@@ -4,7 +4,7 @@ from smbus import SMBus
 I2C_ADDRESS = 0x08
 I2C_BUS = 1
 
-with SMBus(I2C_BUS) as bus:
+bus = SMBus(I2C_BUS) 
     print("Controle do LED via I2C")
     print("1 = ligar | 0 = desligar | qualquer outra tecla = sair")
 
